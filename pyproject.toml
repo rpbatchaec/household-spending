@@ -1,0 +1,20 @@
+﻿[project]
+name = "household-spending"
+version = "0.1.0"
+description = "Household spending CSV -> tidy dataset (with vendor normalization and category mapping)."
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0.0",
+    "pyarrow>=15.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+extend-select = ["I"]
