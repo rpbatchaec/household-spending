@@ -1,4 +1,4 @@
-﻿[project]
+[project]
 name = "household-spending"
 version = "0.1.0"
 description = "Household spending CSV -> tidy dataset (with vendor normalization and category mapping)."
