@@ -158,3 +158,36 @@ git stash pop
 - Run smoke/pytest tests
 - Push if needed: `git push`
 - Paste ChatGPT URL Anchor for this recovery here
+
+# APPENDIX
+
+# How to Anchor a ChatGPT Thread
+_Last updated: 2025-09-16_
+
+You can attach troubleshooting threads to your Master Runbook by saving their URLs.
+
+## Steps
+
+1. Open the ChatGPT conversation you want to link (e.g., a troubleshooting session for S05).
+2. Copy the unique URL from the browser address bar. It will look like:
+
+   ```
+   https://chat.openai.com/c/abc123xyz
+   ```
+
+3. Paste this URL into the **ChatGPT URL Anchor** field of your Master Runbook.
+
+   Example (Markdown table row):
+
+   ```markdown
+   | 5 | **S05** | Git init & nbstripout | .gitattributes updated | | [TB-S05-A](https://chat.openai.com/c/abc123xyz) | [ ] |
+   ```
+
+   → This creates a clickable link.
+
+4. In the **fillable PDF**, paste the URL into the blank field for that step.
+
+## Notes
+- Keep the Master Runbook “clean” (happy path only).
+- Spawn new troubleshooting threads for problems, and link them back here.
+- Each step (S01–S08, ST-01…ST-07, RC-L…) has its own Anchor field.
