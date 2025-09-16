@@ -216,6 +216,7 @@ KEYWORD_RULES = [
             "trader joe",
             "aldi",
             "shaw's",
+            "wegmans",
         ],
         "Groceries",
     ),
